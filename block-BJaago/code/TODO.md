@@ -26,7 +26,7 @@ var userMessage = sayHelloToUser('Bran');
 
 <!-- Put your image below -->
 
-![](./img/image-name.jpg)
+![1](1.jpg)
 
 2.
 
@@ -65,8 +65,8 @@ sayHi();
 4.
 
 ```js
-console.log(arr); // output
-console.log(username); // output
+console.log(arr); // undefined
+console.log(username); // undefined
 var usename = 'Sam';
 var arr = [1, 2, 3, 4, 5, 6];
 

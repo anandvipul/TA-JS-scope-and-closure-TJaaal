@@ -3,6 +3,20 @@
 ```js
 function once(cb) {
   // your code goes here
+  let count = 0;
+  if (count == 0) {
+    
+    return function () {
+      if (count == 0) {
+        count ++;
+        return cb;
+      } else {
+        return "Undefined";
+      }
+    };
+  } else {
+      return "Error";
+    }
 }
 
 // TEST
@@ -17,8 +31,22 @@ log(); // return undefinde (can't be called twice)
 2. Change the above function in such a way that the function accepts two parameter a callback function and parameter for the callback function. When calling the function pass the parameters.
 
 ```js
-function once(cb) {
+function once(cb, arg) {
   // your code goes here
+  let count = 0;
+  if (count == 0) {
+    
+    return function () {
+      if (count == 0) {
+        count ++;
+        return cb(arg);
+      } else {
+        return "Undefined";
+      }
+    };
+  } else {
+      return "Error";
+    }
 }
 
 // TEST
@@ -34,8 +62,22 @@ log(); // return undefinde (can't be called twice)
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
 ```js
-function once(cb) {
-  // your code goes here
+function once(cb, ...arg) {
+    // your code goes here
+  let count = 0;
+  if (count == 0) {
+    
+    return function () {
+      if (count == 0) {
+        count ++;
+        return cb(...arg);
+      } else {
+        return "Undefined";
+      }
+    };
+  } else {
+      return "Error";
+    }
 }
 
 // TEST
@@ -49,6 +91,21 @@ log(); // return undefinde (can't be called twice)
 ```js
 function nTimes(cb, times, ...rest) {
   // your code goes here
+      // your code goes here
+  let count = 0;
+  if (count < times) {
+    
+    return function () {
+      if (count < times) {
+        count ++;
+        return cb(...rest);
+      } else {
+        return "Undefined";
+      }
+    };
+  } else {
+      return "Error";
+    }
 }
 
 // TEST

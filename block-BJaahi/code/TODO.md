@@ -65,6 +65,23 @@ var nextMessage = sayHello('Test');
 
 ```js
 // Your code goes here
+// Declaration
+var username = undefined;
+let number;
+
+function sayHello(name) {
+  return `Hello ${name}`;
+}
+
+let message;
+var nextMessage = undefined;
+
+// Execution
+username = 'Arya';
+number = 21;
+
+message = `Hello Arya`;
+nextMessage = `Hello Test`;
 ```
 
 3.
@@ -86,13 +103,33 @@ var nextMessage = sayHello('Test');
 
 ```js
 // Your code goes here
+
+// Declaration
+let username;
+let number;
+
+let sayHello = function (name) {
+  return `Hello ${name}`;
+};
+
+let message;
+var nextMessage = undefined;
+
+
+// Execution
+username = 'Arya';
+number = 21;
+
+message = `Hello Arya`;
+nextMessage = `Hello Test`;
+
 ```
 
 4.
 
 ```js
 let username = 'Arya';
-console.log(username, numbers);
+console.log(username, number);
 
 let number = 21;
 let message = sayHello(username);
@@ -108,6 +145,22 @@ var nextMessage = sayHello('Test');
 
 ```js
 // Your code goes here
+//Declaration
+let username;
+
+let number;
+let message;
+
+let sayHello;
+
+var nextMessage = undefined;
+
+// Execution
+username = 'Arya';
+console.log('Arya', ); // Error
+
+
+
 ```
 
 5.
@@ -123,6 +176,14 @@ let age = 21;
 
 ```js
 // Your code goes here
+name = ''
+let age;
+
+
+
+console.log(name); // ''
+// Error
+
 ```
 
 6.
@@ -142,6 +203,19 @@ sayHi();
 
 ```js
 // Your code goes here
+
+// Declaration
+function sayHi(name) {
+  console.log(name);
+  console.log(age);
+  var name = 'Lydia';
+  let age = 21;
+}
+
+// Execution
+//name is not defined
+
+
 ```
 
 7.
@@ -193,6 +267,7 @@ let num2 = 30;
 
 ```js
 // Your code goes here
+// Num2 is not defined
 ```
 
 10.
@@ -217,6 +292,7 @@ let sum = add(num1, num2, 4, 5, 6);
 
 ```js
 // Your code goes here
+// Spelling mIstake else Num2 is not defined
 ```
 
 11.
@@ -238,6 +314,7 @@ let add = (a, b) => {
 
 ```js
 // Your code goes here
+// add is not defined
 ```
 
 12.
@@ -259,4 +336,5 @@ function add(a, b) {
 
 ```js
 // Your code goes here
+// sum = 121
 ```
